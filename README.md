@@ -16,5 +16,16 @@ TODO
 
 ## TODOs
 - [ ] Translation (english-french)
-- [X] Include [Material-UI](http://www.material-ui.com)
 - [ ] Secure database
+
+## How to
+* `npm install -g create-react-app` to install create-react-app
+* `create-react-app plex4life` to create a react app named `plex4life`
+
+In the react app directory : 
+* `npm install --save firebase` to install firebase and add it to the app dependencies (package.json)
+* `npm install -g firebase-tools` to install firebase-tools (firebase CLI)
+* `firebase init` to initialize firebase (setup database rules, hosting via firebase.json)
+* `npm run build` to build the app
+* `firebase deploy --token "$FIREBASE_TOKEN";` to deploy the app in firebase
+* `npm start` to start the app locally (for testing purpose)

@@ -59,7 +59,7 @@ class SimplePieChart extends Component {
     return (
       <PieChart width={400} height={400}>
         <Pie data={this.state.data} dataKey="value" innerRadius={40} outerRadius={80}>
-          <Label value="Top 5" position="center" />
+          <Label value={"Top " + this.state.data.length} position="center" />
           {
             this.state.data.map((entry, index) => <Cell key={index} fill={COLORS[index % COLORS.length]} />)
           }

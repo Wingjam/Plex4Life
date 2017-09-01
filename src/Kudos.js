@@ -5,9 +5,11 @@ class Kudos extends Component {
     return (
       <div className="Kudos">
         <h2>Kudos</h2>
-        <li>Kudos to everyone who donate!</li>
-        <li>Kudos to Jonathan Raymond for hosting and helping in hardware.</li>
-        <li>Kudos to Raphaël Cayouette for helping with Plex admin and content.</li>
+        <ul>
+          <li>Kudos to <b>everyone</b> who donate!</li>
+          <li>Kudos to <b>Jonathan Raymond</b> for hosting and helping in hardware.</li>
+          <li>Kudos to <b>Raphaël Cayouette</b> for helping with Plex admin and content.</li>
+        </ul>
       </div>
     );
   }

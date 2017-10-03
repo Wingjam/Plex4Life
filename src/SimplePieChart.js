@@ -45,7 +45,9 @@ class SimplePieChart extends Component {
 
       // Set the state with data
       this.setState({
-        data: data,
+        data: data.sort(function(a, b) {
+          return b.value - a.value;
+        }),
         totalAmount: totalAmount,
       });
     });
